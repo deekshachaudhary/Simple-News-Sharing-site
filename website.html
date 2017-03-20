@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<title>Website</title>
+</head>
+
+<body>
+    <div id="page">
+		
+        <div id="header">
+        	<h1>The News</h1>
+            <h2>Browse your daily news!</h2>
+      </div>
+      <form action="login.php" method='POST'>
+                <fieldset>
+                        <legend>Login</legend> 
+                        <label><b>Username</b></label> 
+                        <input name="username" placeholder="Enter Username" required="" type="text"> 
+                        <label><b>Password</b></label>
+                        <input name= "password" placeholder = "Enter Password" required= "" type ="text">
+                        <input type="submit" value="Login">
+    	</form>
+    	<form action = "signup.html" method = 'Post'>
+    		<input type = "submit" value = "Sign up">
+    	</form>
+                </fieldset>
+        <div id="bar">
+            <ul>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Pop Culture</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>
+        <?php
+	require articles.php;
+	?>
+      </div>
+      	<!-- Sports section -->
+        <div class="contentTitle">
+        	<h1>Sports</h1></div>
+        <div class="contentText">	
+        	<p> enter words here </p> 
+		
+	</div>
+        
+        <!-- Business section -->
+        <div class="contentTitle">
+          <h1>Business</h1>
+        </div>
+        <div class="contentText">
+        	<p> enter words here </p>
+        </div>
+       
+       <!-- Pop Culture section -->
+        <div class="contentTitle">
+        	<h1>Pop Culture</h1>
+        </div>
+        <div class="contentText">
+       		<p> enter words here </p>		
+		</div>
+		
+		<!-- Science section -->
+		<div class="contentTitle">
+        	<h1>Science</h1>
+        </div>
+        <div class="contentText">
+       		<p> enter words here </p>		
+		</div>
+
+</body>
+</html>
+

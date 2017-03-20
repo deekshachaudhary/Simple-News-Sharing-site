@@ -1,0 +1,26 @@
+<html>
+<title>Post An Article</title>
+</head>
+<body>
+   <div id="page">
+   <div id="header">
+      <h1>Post An Article</h1>
+   </div>
+   <fieldset>
+   <form action="post_story.php" method='POST'>
+         <label> <b> Title </b></label>
+         <input name = "title" placeholder = "Enter the article title" required = "" type = "text"> <br>
+         <label> <b> Author </b> </label>
+         <input name = "author" placeholder = "Enter article author" type = "text"> <br>
+         <label> <b> Genre </b> </label>
+         <input name = "genre" placeholder = "Enter Genre" type = "text"> <br>
+         <label> <b> Article Source Website </b> <label>
+         <input name = "website" placeholder = "Enter website url" type = "text"> <br>
+         <label><b>Enter The Content of Your Article Below:</b></label><br>
+         <textarea name= "content" placeholder = "Enter text here" rows = "20" tabindex = "3" required= "" type ="text"></textarea><br>
+         <input type="submit" value="Submit">
+   </form>
+   </fieldset>
+   </div>
+</body>
+</html>
